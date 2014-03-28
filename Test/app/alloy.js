@@ -10,7 +10,7 @@ Titanium.Geolocation.getCurrentPosition(function(e) {
 	var latitude = e.coords.latitude;
 
 	//I would use the following line if my phone didn't have some issues with getting my geo location
-	//var url = 'https://api.foursquare.com/v2/venues/search?near=San Francisco&limit=50&intent=browse&categoryId=4d4b7105d754a06374d81259&oauth_token=0YHRMHDEJD0PSOLYJIJ0BZYDWERBMPUOVOUR4ESDCDD1RTDT&v=20140326';
+	//var url = 'https://api.foursquare.com/v2/venues/search?ll='+latitude+','+longitude+'&limit=50&intent=browse&categoryId=4d4b7105d754a06374d81259&oauth_token=0YHRMHDEJD0PSOLYJIJ0BZYDWERBMPUOVOUR4ESDCDD1RTDT&v=20140326';
 	
 	//query FourSquare for food places near San Francisco
 	var url = 'https://api.foursquare.com/v2/venues/search?near=San Francisco&limit=50&intent=browse&categoryId=4d4b7105d754a06374d81259&oauth_token=0YHRMHDEJD0PSOLYJIJ0BZYDWERBMPUOVOUR4ESDCDD1RTDT&v=20140326';
